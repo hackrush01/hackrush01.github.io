@@ -1,14 +1,13 @@
 # Site settings
 title: hackrush
-# subtitle: by HTML5 UP
 email: some-email@some-mail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+description: This is just the initial template. This site is a WIP and will be completed soon.
 # baseurl: "" # the subpath of your site, e.g. /blog
-# url: "http://127.0.0.1:4000/" # the base hostname & protocol for your site
+url: "https:hackrush01.github.io" # the base hostname & protocol for your site
 author: hackrush
 street_address: Street
 city: City
-state: Stage
+state: State
 zip_code: 99994447
 country: Country
 phone: 11452145987
