@@ -54,3 +54,10 @@
 	@return url("data:image/svg+xml;charset=utf8,#{$svg}");
 
 }
+
+/// This mixin is copied from the "tale" theme (https://github.com/chesterhow/tale)
+@mixin transition($args...) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+          transition: $args;
+}
