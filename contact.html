@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Terra Spices Export</title>
+    <meta name="description"
+        content="Get in touch for business inquiries, export quotes, and bulk orders of Indian spices.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Terra Spices Logo"></a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="products.html">Products</a>
+            <a href="certifications.html">Certifications</a>
+            <a href="contact.html" class="active-link">Contact</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="contact.html" class="btn" style="padding: 0.5rem 1.5rem;">Inquiry</a>
+    </header>
+
+    <main>
+        <section id="contact" style="padding-top: 150px; min-height: 80vh;">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Reach out for business inquiries and custom quotes.</p>
+            </div>
+            <div class="contact-container"
+                style="max-width: 1000px; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p style="margin-bottom: 2rem;">Interested in importing premium Indian spices? Fill out the form or
+                        use our contact details below. Our export team will respond within 24 business hours.</p>
+
+                    <div style="margin-bottom: 1.5rem;">
+                        <strong>📍 Registered Office</strong><br>
+                        Plot 12, Spice Industrial Zone, Unjha, Gujarat, India - 384170
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <strong>📞 Phone</strong><br>
+                        +91 98765 43210
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <strong>✉️ Email</strong><br>
+                        exports@terraspices.com
+                    </div>
+                </div>
+
+                <form id="inquiryForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Business Email</label>
+                        <input type="email" id="email" class="form-control" required placeholder="john@company.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Inquiry</label>
+                        <textarea id="message" class="form-control" rows="5" required
+                            placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Terra Spices Export</h3>
+                <p>Premium Spices, Globally Delivered.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <a href="about.html" style="display: block; margin: 0.5rem 0;">About Us</a>
+                <a href="products.html" style="display: block; margin: 0.5rem 0;">Product List</a>
+                <a href="certifications.html" style="display: block; margin: 0.5rem 0;">Quality</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>📍 Spices Hub, Gujarat, India</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ exports@terraspices.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Terra Spices Export Private Limited. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
