@@ -13,94 +13,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="assets/images/logo.png" alt="Terra Spices Logo"></a>
-        </div>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About us</a>
-            <a href="products.html">Products</a>
-            <a href="certifications.html" class="active-link">Certifications</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <a href="contact.html" class="btn" style="padding: 0.5rem 1.5rem;">Inquiry</a>
-    </header>
+<body class="font-sans text-text-dark leading-relaxed">
+    <div id="header-placeholder"></div>
 
     <main>
-        <section id="certifications" style="padding-top: 150px; min-height: 80vh;">
-            <div class="section-title">
-                <h2>Quality Assurance</h2>
-                <p>Measures we take to ensure global food safety standards.</p>
+        <section id="certifications" class="pt-[150px] min-h-[80vh] px-[10%] pb-20">
+            <div class="mb-12 relative text-center">
+                <h2
+                    class="text-4xl text-primary-green mb-4 inline-block relative pb-4 after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:w-20 after:h-[3px] after:bg-accent-gold after:rounded-sm">
+                    Quality Assurance</h2>
+                <p class="text-lg">Measures we take to ensure global food safety standards.</p>
             </div>
-            <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2rem; text-align: center;">
+            <div class="flex flex-wrap justify-center gap-8 text-center">
                 <div
-                    style="flex: 1; min-width: 280px; padding: 2rem; background: var(--bg-light); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🏆</div>
-                    <h3>ISO 22000 Certified</h3>
+                    class="flex-1 min-w-[280px] p-8 bg-bg-light rounded-xl shadow-md transition-transform hover:-translate-y-2">
+                    <div class="text-[3rem] mb-4">🏆</div>
+                    <h3 class="text-xl font-semibold mb-2">ISO 22000 Certified</h3>
                     <p>Standardizing food safety management across our entire supply chain and processing units.</p>
                 </div>
                 <div
-                    style="flex: 1; min-width: 280px; padding: 2rem; background: var(--bg-light); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🛡️</div>
-                    <h3>FSSAI Registered</h3>
+                    class="flex-1 min-w-[280px] p-8 bg-bg-light rounded-xl shadow-md transition-transform hover:-translate-y-2">
+                    <div class="text-[3rem] mb-4">🛡️</div>
+                    <h3 class="text-xl font-semibold mb-2">FSSAI Registered</h3>
                     <p>Fully compliant with the Food Safety and Standards Authority of India (FSSAI) for health and
                         hygiene.</p>
                 </div>
                 <div
-                    style="flex: 1; min-width: 280px; padding: 2rem; background: var(--bg-light); border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                    <div style="font-size: 3rem; margin-bottom: 1rem;">🌿</div>
-                    <h3>Organic Compliance</h3>
+                    class="flex-1 min-w-[280px] p-8 bg-bg-light rounded-xl shadow-md transition-transform hover:-translate-y-2">
+                    <div class="text-[3rem] mb-4">🌿</div>
+                    <h3 class="text-xl font-semibold mb-2">Organic Compliance</h3>
                     <p>Stringent internal and third-party lab testing to guarantee zero pesticide residues in our
                         organic range.</p>
                 </div>
             </div>
 
-            <div style="margin-top: 80px; padding: 40px; border: 2px dashed var(--accent-gold); border-radius: 15px;">
-                <h3 style="text-align: center; margin-bottom: 20px;">Testing & Lab Protocols</h3>
-                <p>Every shipment undergoes rigorous testing for:</p>
-                <ul
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
-                    <li>✔️ Moisture Content</li>
-                    <li>✔️ Pungency (SHU Level)</li>
-                    <li>✔️ Curcumin Content</li>
-                    <li>✔️ Microbial Load</li>
-                    <li>✔️ Heavy Metal Analysis</li>
-                    <li>✔️ Aflatoxin Levels</li>
+            <div class="mt-20 p-10 border-2 border-dashed border-accent-gold rounded-2xl">
+                <h3 class="text-2xl font-semibold text-center mb-6">Testing & Lab Protocols</h3>
+                <p class="text-lg mb-6">Every shipment undergoes rigorous testing for:</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-lg">
+                    <li class="flex items-center gap-2">✔️ Moisture Content</li>
+                    <li class="flex items-center gap-2">✔️ Pungency (SHU Level)</li>
+                    <li class="flex items-center gap-2">✔️ Curcumin Content</li>
+                    <li class="flex items-center gap-2">✔️ Microbial Load</li>
+                    <li class="flex items-center gap-2">✔️ Heavy Metal Analysis</li>
+                    <li class="flex items-center gap-2">✔️ Aflatoxin Levels</li>
                 </ul>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div>
-                <h3>Terra Spices Export</h3>
-                <p>Premium Spices, Globally Delivered.</p>
-            </div>
-            <div>
-                <h4>Explore</h4>
-                <a href="about.html" style="display: block; margin: 0.5rem 0;">About Us</a>
-                <a href="products.html" style="display: block; margin: 0.5rem 0;">Product List</a>
-                <a href="certifications.html" style="display: block; margin: 0.5rem 0;">Quality</a>
-            </div>
-            <div>
-                <h4>Contact</h4>
-                <p>📍 Spices Hub, Gujarat, India</p>
-                <p>📞 +91 98765 43210</p>
-                <p>✉️ exports@terraspices.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Terra Spices Export Private Limited. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="script.js"></script>
 </body>

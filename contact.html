@@ -13,96 +13,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="assets/images/logo.png" alt="Terra Spices Logo"></a>
-        </div>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About us</a>
-            <a href="products.html">Products</a>
-            <a href="certifications.html">Certifications</a>
-            <a href="contact.html" class="active-link">Contact</a>
-        </nav>
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <a href="contact.html" class="btn" style="padding: 0.5rem 1.5rem;">Inquiry</a>
-    </header>
+<body class="font-sans text-text-dark leading-relaxed">
+    <div id="header-placeholder"></div>
 
     <main>
-        <section id="contact" style="padding-top: 150px; min-height: 80vh;">
-            <div class="section-title">
-                <h2>Contact Us</h2>
-                <p>Reach out for business inquiries and custom quotes.</p>
+        <section id="contact" class="pt-[150px] min-h-[80vh] px-[10%] pb-20">
+            <div class="mb-12 relative text-center">
+                <h2
+                    class="text-4xl text-primary-green mb-4 inline-block relative pb-4 after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:w-20 after:h-[3px] after:bg-accent-gold after:rounded-sm">
+                    Contact Us</h2>
+                <p class="text-lg">Reach out for business inquiries and custom quotes.</p>
             </div>
-            <div class="contact-container"
-                style="max-width: 1000px; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
                 <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p style="margin-bottom: 2rem;">Interested in importing premium Indian spices? Fill out the form or
-                        use our contact details below. Our export team will respond within 24 business hours.</p>
+                    <h3 class="text-2xl font-semibold mb-4 text-text-dark">Get in Touch</h3>
+                    <p class="mb-8 text-lg">Interested in importing premium Indian spices? Fill out the form or use our
+                        contact details below. Our export team will respond within 24 business hours.</p>
 
-                    <div style="margin-bottom: 1.5rem;">
-                        <strong>📍 Registered Office</strong><br>
+                    <div class="mb-6">
+                        <strong class="text-primary-green">📍 Registered Office</strong><br>
                         Plot 12, Spice Industrial Zone, Unjha, Gujarat, India - 384170
                     </div>
-                    <div style="margin-bottom: 1.5rem;">
-                        <strong>📞 Phone</strong><br>
+                    <div class="mb-6">
+                        <strong class="text-primary-green">📞 Phone</strong><br>
                         +91 98765 43210
                     </div>
-                    <div style="margin-bottom: 1.5rem;">
-                        <strong>✉️ Email</strong><br>
+                    <div class="mb-6">
+                        <strong class="text-primary-green">✉️ Email</strong><br>
                         exports@terraspices.com
                     </div>
                 </div>
 
-                <form id="inquiryForm">
+                <form id="inquiryForm" class="space-y-4">
                     <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" class="form-control" required placeholder="John Doe">
+                        <label for="name" class="block mb-2 font-medium">Full Name</label>
+                        <input type="text" id="name"
+                            class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-accent-gold transition-colors"
+                            required placeholder="John Doe">
                     </div>
                     <div class="form-group">
-                        <label for="email">Business Email</label>
-                        <input type="email" id="email" class="form-control" required placeholder="john@company.com">
+                        <label for="email" class="block mb-2 font-medium">Business Email</label>
+                        <input type="email" id="email"
+                            class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-accent-gold transition-colors"
+                            required placeholder="john@company.com">
                     </div>
                     <div class="form-group">
-                        <label for="message">Your Inquiry</label>
-                        <textarea id="message" class="form-control" rows="5" required
-                            placeholder="Tell us about your requirements..."></textarea>
+                        <label for="message" class="block mb-2 font-medium">Your Inquiry</label>
+                        <textarea id="message"
+                            class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:border-accent-gold transition-colors"
+                            rows="5" required placeholder="Tell us about your requirements..."></textarea>
                     </div>
-                    <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    <button type="submit"
+                        class="w-full px-6 py-3 bg-accent-gold text-white font-semibold rounded hover:bg-active-gold transition-all duration-300 shadow-md">Send
+                        Message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div>
-                <h3>Terra Spices Export</h3>
-                <p>Premium Spices, Globally Delivered.</p>
-            </div>
-            <div>
-                <h4>Explore</h4>
-                <a href="about.html" style="display: block; margin: 0.5rem 0;">About Us</a>
-                <a href="products.html" style="display: block; margin: 0.5rem 0;">Product List</a>
-                <a href="certifications.html" style="display: block; margin: 0.5rem 0;">Quality</a>
-            </div>
-            <div>
-                <h4>Contact</h4>
-                <p>📍 Spices Hub, Gujarat, India</p>
-                <p>📞 +91 98765 43210</p>
-                <p>✉️ exports@terraspices.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Terra Spices Export Private Limited. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="script.js"></script>
 </body>

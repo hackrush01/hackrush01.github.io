@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+    }
+
+    .animate-on-scroll.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@layer components {
+
+    /* Mobile Menu Active State */
+    .nav-links.active {
+        @apply right-0 flex flex-col;
+    }
+}
+
+header {
+    backdrop-filter: blur(10px);
+    @apply transition-all duration-300;
+}
+
+header.header-scrolled {
+    @apply py-2 shadow-md;
+}
