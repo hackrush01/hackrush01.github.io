@@ -16,18 +16,5 @@
 }
 
 @layer components {
-
-    /* Mobile Menu Active State */
-    .nav-links.active {
-        @apply right-0 flex flex-col;
-    }
-}
-
-header {
-    backdrop-filter: blur(10px);
-    @apply transition-all duration-300;
-}
-
-header.header-scrolled {
-    @apply py-2 shadow-md;
+    /* Custom components if needed later */
 }

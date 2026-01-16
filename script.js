@@ -36,25 +36,42 @@ function setupHeaderFeatures() {
     const menuToggle = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
 
-    if (menuToggle) {
+    if (menuToggle && navLinks) {
         menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            menuToggle.classList.toggle('is-active');
+            // Toggle hidden class to show/hide menu
+            navLinks.classList.toggle('hidden');
+            navLinks.classList.toggle('flex');
+
+            // Animation for hamburger menu (simple rotation/transform if needed, or keep as is if CSS handles it)
+            const spans = menuToggle.querySelectorAll('span');
+            spans.forEach(span => span.classList.toggle('bg-accent-gold')); // Example interaction feedback
         });
     }
 
     // Close mobile menu when a link is clicked
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
+            if (window.innerWidth < 768) { // Only on mobile
+                navLinks.classList.add('hidden');
+                navLinks.classList.remove('flex');
+            }
         });
     });
 
     // Set active navigation link
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const path = window.location.pathname;
+    const currentPage = path.split('/').pop() || 'index.html';
+
     document.querySelectorAll('.nav-links a').forEach(link => {
-        const navTarget = link.getAttribute('data-nav');
-        if (navTarget === currentPage) {
+        let navTarget = link.getAttribute('data-nav');
+
+        // Match logic: 
+        // 1. If navTarget is './', it matches 'index.html'
+        // 2. Exact match
+        const isHomeMatch = (navTarget === './' || navTarget === 'index.html') && (currentPage === 'index.html');
+        const isExactMatch = navTarget === currentPage;
+
+        if (isHomeMatch || isExactMatch) {
             link.classList.add('text-accent-gold', 'border-b-2', 'border-accent-gold');
             link.classList.remove('text-text-dark');
         } else {
@@ -67,7 +84,13 @@ function setupHeaderFeatures() {
     const header = document.querySelector('header');
     if (header) {
         window.addEventListener('scroll', () => {
-            header.classList.toggle('header-scrolled', window.scrollY > 50);
+            if (window.scrollY > 50) {
+                header.classList.remove('py-4');
+                header.classList.add('py-2', 'shadow-md');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2', 'shadow-md');
+            }
         });
     }
 }
@@ -94,19 +117,19 @@ document.addEventListener('click', (e) => {
 });
 
 // Simple Form Submission Handling
-const inquiryForm = document.getElementById('inquiryForm');
-if (inquiryForm) {
-    inquiryForm.addEventListener('submit', (e) => {
+const enquiryForm = document.getElementById('enquiryForm');
+if (enquiryForm) {
+    enquiryForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
         // Show success message (demo)
-        const btn = inquiryForm.querySelector('button');
+        const btn = enquiryForm.querySelector('button');
         const originalText = btn.textContent;
 
         btn.textContent = 'Enquiry Sent Successfully! ✓';
         btn.style.background = '#28a745';
 
-        inquiryForm.reset();
+        enquiryForm.reset();
 
         setTimeout(() => {
             btn.textContent = originalText;
