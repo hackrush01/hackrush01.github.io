@@ -13,87 +13,80 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
-        <div class="logo">
-            <a href="index.html"><img src="assets/images/logo.png" alt="Terra Spices Logo"></a>
-        </div>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About us</a>
-            <a href="products.html" class="active-link">Products</a>
-            <a href="certifications.html">Certifications</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <div class="menu-toggle" id="mobile-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <a href="contact.html" class="btn" style="padding: 0.5rem 1.5rem;">Inquiry</a>
-    </header>
+<body class="font-sans text-text-dark leading-relaxed">
+    <div id="header-placeholder"></div>
 
     <main>
-        <section id="products" style="padding-top: 150px; background: var(--bg-light); min-height: 80vh;">
-            <div class="section-title">
-                <h2>Our Product Catalog</h2>
-                <p>Export Grade Spices Sourced Directly from India's Best Fields</p>
+        <section id="products" class="pt-[150px] bg-bg-light min-h-[80vh] px-[10%] pb-20">
+            <div class="mb-12 relative text-center">
+                <h2
+                    class="text-4xl text-primary-green mb-4 inline-block relative pb-4 after:content-[''] after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2 after:w-20 after:h-[3px] after:bg-accent-gold after:rounded-sm">
+                    Our Product Catalog</h2>
+                <p class="text-lg">Export Grade Spices Sourced Directly from India's Best Fields</p>
             </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="assets/images/turmeric.png" alt="Premium Turmeric Powder">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <div class="h-[200px] overflow-hidden">
+                        <img src="assets/images/turmeric.png" alt="Premium Turmeric Powder"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
                     </div>
-                    <div class="product-info">
-                        <h3>Turmeric Powder</h3>
-                        <p>High curcumin content turmeric powder, processed from the finest Rajapuri roots. Vibrant
-                            color and rich aroma.</p>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-primary-green">Turmeric Powder</h3>
+                        <p class="text-sm text-gray-600 mb-4">High curcumin content turmeric powder, processed from the
+                            finest Rajapuri roots. Vibrant color and rich aroma.</p>
                         <a href="contact.html"
-                            style="color: var(--accent-gold); font-weight: 600; margin-top: 1rem; display: inline-block;">Enquire
+                            class="text-accent-gold font-semibold inline-block hover:text-active-gold transition-colors">Enquire
                             Now →</a>
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <div class="product-img">
-                        <img src="assets/images/chilli.png" alt="Dried Red Chillies">
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <div class="h-[200px] overflow-hidden">
+                        <img src="assets/images/chilli.png" alt="Dried Red Chillies"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
                     </div>
-                    <div class="product-info">
-                        <h3>Dried Red Chilli</h3>
-                        <p>Premium grade dried chillies known for their intense pungency and deep red color. Sorted and
-                            graded for consistency.</p>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-primary-green">Dried Red Chilli</h3>
+                        <p class="text-sm text-gray-600 mb-4">Premium grade dried chillies known for their intense
+                            pungency and deep red color. Sorted and graded for consistency.</p>
                         <a href="contact.html"
-                            style="color: var(--accent-gold); font-weight: 600; margin-top: 1rem; display: inline-block;">Enquire
+                            class="text-accent-gold font-semibold inline-block hover:text-active-gold transition-colors">Enquire
                             Now →</a>
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <div class="product-img">
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <div class="h-[200px] overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&q=80&w=800"
-                            alt="Black Pepper">
+                            alt="Black Pepper"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
                     </div>
-                    <div class="product-info">
-                        <h3>Black Pepper</h3>
-                        <p>Bold and aromatic black pepper berries from the Malabar coast. Available in whole spice and
-                            powdered forms.</p>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-primary-green">Black Pepper</h3>
+                        <p class="text-sm text-gray-600 mb-4">Bold and aromatic black pepper berries from the Malabar
+                            coast. Available in whole spice and powdered forms.</p>
                         <a href="contact.html"
-                            style="color: var(--accent-gold); font-weight: 600; margin-top: 1rem; display: inline-block;">Enquire
+                            class="text-accent-gold font-semibold inline-block hover:text-active-gold transition-colors">Enquire
                             Now →</a>
                     </div>
                 </div>
 
-                <div class="product-card">
-                    <div class="product-img">
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl">
+                    <div class="h-[200px] overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1591462528188-265492bc6916?auto=format&fit=crop&q=80&w=800"
-                            alt="Cumin Seeds">
+                            alt="Cumin Seeds"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
                     </div>
-                    <div class="product-info">
-                        <h3>Cumin Seeds</h3>
-                        <p>Aromatic cumin seeds with high essential oil content. Machine cleaned and hand-picked options
-                            available.</p>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-primary-green">Cumin Seeds</h3>
+                        <p class="text-sm text-gray-600 mb-4">Aromatic cumin seeds with high essential oil content.
+                            Machine cleaned and hand-picked options available.</p>
                         <a href="contact.html"
-                            style="color: var(--accent-gold); font-weight: 600; margin-top: 1rem; display: inline-block;">Enquire
+                            class="text-accent-gold font-semibold inline-block hover:text-active-gold transition-colors">Enquire
                             Now →</a>
                     </div>
                 </div>
@@ -101,29 +94,7 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div>
-                <h3>Terra Spices Export</h3>
-                <p>Premium Spices, Globally Delivered.</p>
-            </div>
-            <div>
-                <h4>Explore</h4>
-                <a href="about.html" style="display: block; margin: 0.5rem 0;">About Us</a>
-                <a href="products.html" style="display: block; margin: 0.5rem 0;">Product List</a>
-                <a href="certifications.html" style="display: block; margin: 0.5rem 0;">Quality</a>
-            </div>
-            <div>
-                <h4>Contact</h4>
-                <p>📍 Spices Hub, Gujarat, India</p>
-                <p>📞 +91 98765 43210</p>
-                <p>✉️ exports@terraspices.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Terra Spices Export Private Limited. All Rights Reserved.</p>
-        </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <script src="script.js"></script>
 </body>
