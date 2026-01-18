@@ -117,24 +117,63 @@ document.addEventListener('click', (e) => {
 });
 
 // Simple Form Submission Handling
+// Form Submission Handling
+const FORMEASY_URL = "https://script.google.com/macros/s/AKfycbzYVsGnC2GBToA51_39F9Aiu409KRAZQhsaLQgR9dISVteOd2MQJ1_kqQP6OiGjsYaW/exec"; // TODO: Replace with your actual Formeasy/Google Script URL
+
 const enquiryForm = document.getElementById('enquiryForm');
 if (enquiryForm) {
-    enquiryForm.addEventListener('submit', (e) => {
+    enquiryForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        // Show success message (demo)
         const btn = enquiryForm.querySelector('button');
         const originalText = btn.textContent;
 
-        btn.textContent = 'Enquiry Sent Successfully! ✓';
-        btn.style.background = '#28a745';
+        // Show loading state
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
 
-        enquiryForm.reset();
+        try {
+            const formData = new FormData(enquiryForm);
+            const data = Object.fromEntries(formData);
 
-        setTimeout(() => {
-            btn.textContent = originalText;
-            btn.style.background = '';
-        }, 3000);
+            const response = await fetch(FORMEASY_URL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'text/plain;charset=utf-8',
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+
+
+            // Success
+            btn.textContent = 'Enquiry Sent Successfully! ✓';
+            btn.style.background = '#28a745';
+
+            enquiryForm.reset();
+
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '';
+                btn.disabled = false;
+            }, 3000);
+
+        } catch (error) {
+            console.error('Error submitting form:', error);
+
+            // Error feedback
+            btn.textContent = 'Error Sending. Try Again.';
+            btn.style.background = '#dc3545';
+
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '';
+                btn.disabled = false;
+            }, 3000);
+        }
     });
 }
 
