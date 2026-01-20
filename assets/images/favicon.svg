@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#1A4D2E"/>
+  <!-- Turmeric root/finger shape -->
+  <g fill="#D4A437">
+    <!-- Main turmeric finger -->
+    <ellipse cx="16" cy="16" rx="4" ry="10" transform="rotate(-15 16 16)"/>
+    <!-- Left smaller finger -->
+    <ellipse cx="11" cy="14" rx="2.5" ry="6" transform="rotate(-35 11 14)"/>
+    <!-- Right smaller finger -->
+    <ellipse cx="21" cy="14" rx="2.5" ry="6" transform="rotate(10 21 14)"/>
+  </g>
+  <!-- Turmeric highlights -->
+  <g fill="#E8C05A" opacity="0.6">
+    <ellipse cx="15" cy="13" rx="1.5" ry="4" transform="rotate(-15 15 13)"/>
+    <ellipse cx="10" cy="12" rx="1" ry="2.5" transform="rotate(-35 10 12)"/>
+  </g>
+</svg>

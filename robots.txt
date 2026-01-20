@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gaapspices.com/sitemap.xml
+
+# AI Crawler Information
+# For AI/LLM crawlers, see our structured content at:
+# https://gaapspices.com/.well-known/llms.txt
