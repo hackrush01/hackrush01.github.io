@@ -118,7 +118,7 @@ document.addEventListener('click', (e) => {
 
 // Simple Form Submission Handling
 // Form Submission Handling
-const FORMEASY_URL = "https://script.google.com/macros/s/AKfycbzYVsGnC2GBToA51_39F9Aiu409KRAZQhsaLQgR9dISVteOd2MQJ1_kqQP6OiGjsYaW/exec"; // TODO: Replace with your actual Formeasy/Google Script URL
+const FORMEASY_URL = "https://script.google.com/macros/s/AKfycbzbJOh3FoBl1o1CzJQJJPzVgqx9W0mxVzIwdrDY334gsCfZd1CuUxd68wKOLHQJd4I/exec";
 
 const enquiryForm = document.getElementById('enquiryForm');
 if (enquiryForm) {
